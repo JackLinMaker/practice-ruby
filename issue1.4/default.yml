@@ -1,0 +1,19 @@
+default: &DEFAULT
+    host:
+        name:testsystem
+        http_port:'8080'
+        username:defaultuser
+    database:
+        host: db01/db01
+        username:
+        password:
+    test:
+        browser: FIREFOX
+
+windows_default: &WIN_DEFAULT
+    <<: *DEFAULT
+    test:
+        browser: IE
+
+
+            
